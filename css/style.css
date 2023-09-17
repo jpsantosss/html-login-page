@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --cor1:#2DC7FF ;
+    --cor2:#47CEFF ;
+    --cor3:#1087B3 ;
+    --cor4:#FFCF33 ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-width: 900px;
+    height: 100%;
+    display: grid;
+    grid: "sidebar body" 1fr / 800px 600px;
+    gap: 8px;
+    margin: auto;
+}
+
+main{
+    background-color: #FFCF33;
+    grid-area: sidebar;
+}
+main img{
+    width: 100%;
+}
+
+aside{
+    background-color: #1087B3;
+    grid-area: body;
+}
