@@ -30,9 +30,9 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
 }
@@ -75,9 +75,9 @@ form.formulario{
 .caixa > input{
     width: calc(100% - 47px);
     height: 85%;
-    transform: translateY(-4px);
     border-radius: 8px;
     text-indent: 5px;
+    transform: translateY(-4px);
 }
 .material-icons{
     color: white;
