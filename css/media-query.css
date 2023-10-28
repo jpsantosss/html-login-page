@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, #420080, #120024);
+    }
+    main{
+        width: 90vw;
+        height: 400px;
+        background-color: white;
+    }
+
+    .imagem{
+        float: left;
+        height: 100%;
+        width: 37%;
+    }
+    
+    .login{
+        float: right;
+        height: 100%;
+        width: 60%;
+    }
+
+    .caixa{
+        margin-right: -5px;
+    }
+}
+
+/* Desktop and big screens */
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, #420080, #120024);
+    }
+    main{
+        width: 950px;
+        height: 400px;
+        background-color: white;
+    }
+
+    .imagem{
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+    
+    .login{
+        float: left;
+        height: 100%;
+        width: 47%;
+    }
+
+}

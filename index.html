@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
 </head>
 <body>
-    <main>
-        <img src="assets/web.png" alt="People searching">
-        <footer>
-            instagram
-            linkedin
-            github
-            other projects
-        </footer>
-    </main>
-    <aside>
-        <p>Hey!</p>
-        <p>let's get you started</p>
-        <p>choose your avatar</p>
-        <div class="avatars">
-            <img src="assets/avatar1.png" alt="avatar 1">
-            <img src="assets/avatar2.png" alt="avatar 2">
-            <img src="assets/avatar3.png" alt="avatar 3">
-            <img src="assets/avatar4.png" alt="avatar 4">
-            <img src="assets/avatar5.png" alt="avatar 5">
-            <button>Usuario</button>
-            <button>Senha</button>
+    <main class="conteudo">
+        <div class="imagem"></div>
+
+        <div class="login">
+            <h1 class="titulo">Login</h1>
+            <p class="paragrafo">Bem vindo(a) de volta!</p>
+            <p class="paragrafo">Faça login para acessar sua conta e poder fazer as configurações de ambiente.</p>
+
+            <form action="cadastro.php" method="post" autocomplete="off" class="formulario">
+                <div class="caixa">
+                    <label for="iemail" class="label-email"><i class="material-icons">person</i></label>
+                    <input type="email" name="email" id="iemail" required placeholder="E-mail" size="30">
+                </div>
+
+
+                <div class="caixa">
+                    <label for="isenha" class="label-senha"><i class="material-icons">key</i></label>
+                    <input type="password" name="senha" id="isenha" required placeholder="Senha" size="30">
+                </div>
+
+                <div class="caixa-botao">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="caixa-botao">
+                <a href="#"><button>Esqueceu a senha?</button></a>
+            </div>
         </div>
-    </aside>
+    </main>
 </body>
 </html>

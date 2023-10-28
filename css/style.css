@@ -1,36 +1,130 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Mobile First */
 
 :root{
-    --cor1:#2DC7FF ;
-    --cor2:#47CEFF ;
-    --cor3:#1087B3 ;
-    --cor4:#FFCF33 ;
+    --cor001: #420080;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html{
+    width: 100vw;
+    height: 100vh;
+}
 body{
-    min-width: 900px;
-    height: 100%;
-    display: grid;
-    grid: "sidebar body" 1fr / 800px 600px;
-    gap: 8px;
-    margin: auto;
+    background-color: var(--cor001);
 }
-
 main{
-    background-color: #FFCF33;
-    grid-area: sidebar;
-}
-main img{
-    width: 100%;
+    width: 250px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
-aside{
-    background-color: #1087B3;
-    grid-area: body;
+.imagem{
+    display: block;
+    height: 200px;
+    background: black url(../images/skyscraper.jpg) center center no-repeat;
+    background-size: cover;
+}
+.login{
+    display: block;
+    padding: 10px;
+}
+
+h1.titulo{
+    text-align: center;
+    color: var(--cor001);
+    padding-bottom: 10px;
+}
+p.paragrafo{
+    text-align: center;
+    color: var(--cor001);
+    padding: 5px 10px 0px 10px;
+}
+
+form.formulario{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caixa{
+    background-color: var(--cor001);
+    width: 99%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 4px;
+    border: 2px solid #420080;
+}
+.caixa > input{
+    width: calc(100% - 47px);
+    height: 85%;
+    transform: translateY(-4px);
+    border-radius: 8px;
+    text-indent: 5px;
+}
+.material-icons{
+    color: white;
+    padding: 5px;
+    width: 27px;
+}
+
+.caixa-botao > input{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+
+    background-color: var(--cor001);
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+
+    border: 2px solid #420080;
+    border-radius: 8px;
+}
+.caixa-botao > input:hover{
+    color: rgb(189, 189, 189);
+    background-color: #210041;
+    transition: 0.6s;
+}
+.caixa-botao > a > button{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    background-color: white;
+    border: 2px solid #420080;
+    border-radius: 8px;
+
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--cor001);
+}
+a{
+    text-decoration: none;
+}
+.caixa-botao > a > button:hover{
+    color: white;
+    background-color: var(--cor001);
+    transition: 0.6s;
 }
