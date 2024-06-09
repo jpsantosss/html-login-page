@@ -11,5 +11,5 @@ Projeto feito no Curso em Video com objetivo de incluir técnicas de Media Queri
 * HTML5
 * CSS3
 
-* Link para o projeto [Login Page](https://jpsantosss.github.io/login-page/).
+* Link para o projeto [Login Page](https://jpsantosss.github.io/html-login-page/).
 
